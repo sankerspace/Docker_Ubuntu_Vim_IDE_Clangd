@@ -2,7 +2,7 @@
 
 A Dockerfile to build a fully featured VIM IDE for C++ Docker Image with YouComplete Code Completion Support.
 
-[Project sankerspace/ubuntu-vim-ide-clangd](https://hub.docker.com/repository/docker/sankerspace/ubuntu-vim-ide-clangd)
+[sankerspace/ubuntu-vim-ide-clangd](https://hub.docker.com/repository/docker/sankerspace/ubuntu-vim-ide-clangd)
 
 ## Why someone should use my Docker_Ubuntu_Vim_IDE_Clangd Docker Container
 
