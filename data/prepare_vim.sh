@@ -1,0 +1,9 @@
+#/bin/sh
+
+#Instal Plugins in VIM in non-interactive-mode
+echo Install VIM Plugins
+echo | echo | vim +PluginInstall +qall 2>/dev/null
+echo Finished...
+echo Install YouCompleter..... 
+cd /home/user/.vim/bundle/YouCompleteMe && python3 install.py --clangd-completer
+echo Finished...

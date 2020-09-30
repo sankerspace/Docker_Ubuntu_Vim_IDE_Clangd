@@ -1,0 +1,20 @@
+After runnung this container you have to initialize YouComplete for use, start following script:
+
+	prepare_vim.sh
+
+If you want use Volume for persistent data, please use direcory /home/user/ENVIRONMENT_DATA 
+Following script is performing backup of all data in /home/user/ to /home/user/ENVIRONMENT_DATA
+
+	backup.sh
+
+Follwing script restore all data, especially content of .vim and .vimrc from /home/user/ENVIRONMENT_DATA into /home/user/
+
+	restore.sh
+
+
+
+NOTE: This is not the perfect solution fo now, but Iam working on that. I wanted to use the whole home direcory /home/user/ as persistent location
+but that is not working very well. you have to change permissions on the host directory location, to be used in the docker container as it should () 
+Other dfirectories created by docker building process inside /home/user are vanished.(chown user:users  <directory_shared_with_docker_container>)
+Maybe vim runtime can be changed to search inside /home/user/ENVIRONMENT_DATA.
+For support i would be gratefull: sankerspace@gmail.com   
